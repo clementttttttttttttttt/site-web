@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Notre séjour</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Nunito:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- PAGE 1 — ACCUEIL -->
+<section id="page-accueil" class="page page-blanche active">
+  <div class="bloc-accueil">
+    <h1 class="question">As-tu apprécié ce séjour ?</h1>
+    <div class="boutons-reponse">
+      <button id="btn-oui" class="btn btn-oui" type="button">Oui</button>
+      <button id="btn-non" class="btn btn-non" type="button">Non</button>
+    </div>
+  </div>
+</section>
+
+<!-- PAGE 2 — LE JEU DES PRÉDICTIONS -->
+<section id="page-jeu" class="page page-amour">
+  <div class="carte">
+    <h1 class="titre">🔮 Le jeu des prédictions</h1>
+    <p class="regles">Pour chaque prédiction vraie, coche la case et regarde ton score final !</p>
+
+    <ul class="liste-predictions" id="liste-predictions"></ul>
+
+    <p class="score-box">Score : <span id="score-valeur">0</span> / <span id="score-total">0</span></p>
+
+    <button id="btn-continuer-1" class="btn btn-continuer" type="button">Continuer</button>
+  </div>
+</section>
+
+<!-- PAGE 3 — CALENDRIER DES JOURNÉES -->
+<section id="page-calendrier" class="page page-amour">
+  <div class="carte">
+    <h1 class="titre">Note tes journées</h1>
+    <p class="regles">Fais glisser le curseur pour donner une note de 0 à 100 % à chaque jour du séjour.</p>
+
+    <div class="calendrier" id="calendrier"></div>
+
+    <div id="resultat-final" class="resultat-final cache">
+      <p class="note-finale">Note finale : <span id="note-finale-valeur">0</span> %</p>
+      <p class="message-finale" id="message-finale"></p>
+    </div>
+
+    <button id="btn-continuer-2" class="btn btn-continuer" type="button">Continuer</button>
+  </div>
+</section>
+
+<!-- PAGE 4 — FIN -->
+<section id="page-fin" class="page page-amour">
+  <div>
+    <h1 class="titre-fin">Fin du voyage, cimer pour l'invit' 💕</h1>
+    <span class="billet">20 → 27 AOÛT</span>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
